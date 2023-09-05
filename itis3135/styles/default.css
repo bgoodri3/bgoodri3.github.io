@@ -1,0 +1,11 @@
+body {
+    background-color: purple;
+}
+
+nav > a {
+    color: orangered;
+}
+
+main > ul > li {
+    font-weight: bold;
+}
