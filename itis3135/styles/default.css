@@ -1,9 +1,9 @@
 body {
-    background-color: purple;
+    background-color: white;
 }
 
 nav > a {
-    color: orangered;
+    color: black;
 }
 
 main > ul > li {
