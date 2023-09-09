@@ -9,3 +9,16 @@ nav > a {
 main > ul > li {
     font-weight: bold;
 }
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: white
+}
+
+tr:nth-child(even){
+    background-color: grey;
+}
