@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendon Goodrich's Bankrupt Gerbil || ITIS 3135 Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+    <body>
+        <header>
+            <h1>Brendon Goodrich's Bankrupt Gerbil || ITIS 3135</h1>
+            <nav>
+                <a href="./"> Brendon's Home</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="contract.html">Contract</a>
+                ||
+                <a href="table.html">Table</a>
+                ||
+                <a href="forms.html">Forms</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Forms</h2>
+            <form method="post" action="#">
+                <fieldset>
+                    <label for="name">Enter your name: <input id="name" type="text" required/></label>
+                    <label for="phone">Enter your phone number <input id="phone" type="number" name="phone" required/></label>
+                    <label for="email">Enter your email: <input id="email" name="email" type="email" required/></label>
+                </fieldset>
+                <fieldset>
+                   <p>What position are you applying for?</p> 
+                   <label><input value="sales" type="radio" name="position" required/>Sales</label> 
+                   <label><input value="it" type="radio" name="position" required/>I.T. Security</label>
+                   <label><input value="finances" type="radio" name="position" required/>Finances</label> 
+                   <label><input value="public" type="radio" name="position" required/>Public Relations</label> 
+                </fieldset>
+                <fieldset>
+                    <p>What days can you work?</p>
+                    <label for="day"><input value="monday" type="checkbox" name="day"/>Monday</label>
+                    <label for="day"><input value="tuesday" type="checkbox" name="day"/>Tuesday</label>
+                    <label for="day"><input value="wednesday" type="checkbox" name="day"/>Wednesday</label>
+                    <label for="day"><input value="thursday" type="checkbox" name="day"/>Thursday</label>
+                    <label for="day"><input value="friday" type="checkbox" name="day"/>Friday</label>
+                    <label for="day"><input value="saturday" type="checkbox" name="day"/>Saturday</label>
+                    <label for="day"><input value="sunday" type="checkbox" name="day"/>Sunday</label>
+                </fieldset>
+                <fieldset>
+                    <p>How did you hear about us?</p>
+                    <label for="heard"></label>
+                    <select id="dropdown">
+                        <option value=" ">(select one)</option>
+                        <option value="1">Indeed.com</option>
+                        <option value="2">Monster.com</option>
+                        <option value="3">Online ads</option>
+                        <option value="3">Friends/Family</option>
+                        <option value="4">Other...</option>
+                    </select>
+                </fieldset>
+                    <label><input value="reset" type="reset"></label>
+                    <label><input value="submit" type="submit"></label>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/bgoodri3/">Charlotte Homepage</a>
+                ||
+                <a href="https://github.com/bgoodri3?tab=repositories">Github Repository</a>
+                ||
+                <a href="https://github.com/bgoodri3/bgoodri3.github.io">Github.io Page</a>
+                ||
+                <a href="https://www.freecodecamp.org/bgoodri3">FreeCodeCamp Account</a>
+                ||
+                <a href="https://www.codecademy.com/profiles/bgoodri3">Codecademy Account</a>
+                ||
+                <a href="https://www.linkedin.com/in/bgoodrich2001/">LinkedIn</a>
+            </nav>
+            <p>Page Built by Goodrich Ventures</p>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+                CSS!">
+                </a>
+        </footer>
+    </body>
+</html>
