@@ -1,0 +1,30 @@
+*{
+    background-color: white;
+    color: black;
+    border-style: solid 50%;
+}
+
+header{
+    font: papyrus;
+    filter: contrast(75%);
+}
+
+main{
+    font: comic-sans;
+}
+
+footer{
+    font: times-new-roman;
+}
+
+ul, p{
+    text-align: center;
+}
+
+main{
+    margin: 4% 12% 96% 72%;
+}
+
+main > p{
+    background-color: blueviolet;
+}
