@@ -1,0 +1,12 @@
+img{
+    width: 75px;
+    height: 75px;
+}
+
+ul{
+    list-style: square;
+}
+
+p{
+    border: solid 2px;
+}
