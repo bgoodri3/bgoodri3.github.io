@@ -1,7 +1,15 @@
 ul{
     list-style: square;
+    background-color: #8b8c89;
+    color: #a3cef1;
 }
 
 p{
     border: solid 2px;
 }
+
+h2{
+    background-color: #274c77;
+    color: #e7ecef;
+}
+
