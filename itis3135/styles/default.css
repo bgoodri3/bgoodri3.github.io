@@ -50,3 +50,6 @@ fieldset:last-of-type{
     color: purple;
 }
 
+a:link{
+    color: black;
+}
