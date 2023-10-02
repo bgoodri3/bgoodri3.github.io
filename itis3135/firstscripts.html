@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goodrich Venture's</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/defaultscripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>First Scripts</h1>
+            <nav>
+                <a href="./">Brendon's Home</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="contract.html">Contract</a>
+                ||
+                <a href="table.html">Table</a>
+                ||
+                <a href="forms.html">Forms</a>
+            </nav>
+            <nav>
+                <a href="C r&p Py assignment.html">Crappy</a>
+                ||
+                <a href="firm_enhance.html">Firm Enhancement</a>
+                ||
+                <a href="website_evaluations.html">Website Evaluation</a>
+                ||
+                <a href="firstscripts.html">First Scripts</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to Goodrich Venture Company</h1>
+
+            <h3 id="dateTimeDisplay"></h3>
+
+            <label for="nameInput">Your Name:</label>
+            <input type="text" id="nameInput">
+
+            <label for="moodInput">How are you feeling?</label>
+            <input type="text" id="moodInput">
+
+            <button onclick="greetUser()">Submit</button>
+
+            <label for="numberInput">Enter your favorite number (0-10):</label>
+            <input type="number" id="numberInput" min="0" max="10">
+
+            <button onclick="findPolygonName()">Find Polygon Name</button>
+
+            <h3 id="greeting"></h3>
+            <h3 id="polygonName"></h3>
+
+            <button onclick="function1()">Function 1</button>
+            <button onclick="function2()">Function 2</button>
+            <button onclick="function3()">Function 3</button>
+            <button onclick="function4()">Function 4</button>
+            <button onclick="function5()">Function 5</button>
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            setInterval(() => {
+                document.getElementById("dateTimeDisplay").textContent = getCurrentDateTime();
+            }, 1000);
+        </script>
+    </body>
+</html>
+
+
+
