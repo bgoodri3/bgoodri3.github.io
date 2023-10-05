@@ -58,9 +58,9 @@
             <button onclick="function4()">Function 4</button>
             <button onclick="function5()">Function 5</button>
         </main>
-        <footer>
+        <div data-include="components/footer.html"></div>
 
-        </footer>
+        <script src="scripts/include.min.js"></script>
         <script>
             setInterval(() => {
                 document.getElementById("dateTimeDisplay").textContent = getCurrentDateTime();
