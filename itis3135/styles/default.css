@@ -1,9 +1,12 @@
+/*  https://coolors.co/e7ecef-274c77-6096ba-a3cef1-8b8c89  */
+
 body {
-    background-color: white;
+    background-color: #8b8c89;
+    color: #6096ba;
 }
 
 nav > a {
-    color: black;
+    color: #274c77;
 }
 
 main > ul > li {
@@ -53,3 +56,4 @@ fieldset:last-of-type{
 a:link{
     color: black;
 }
+
