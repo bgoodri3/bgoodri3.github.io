@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/survey.js"></script>
         <title>BYO Intro</title>
     </head>
     <body>
@@ -11,31 +12,64 @@
         <main>
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form so we can create your own page.</h3>
-            <form>
+            <form id="surveyForm" action="submit_action.php" method="POST" enctype="multipart/form-data">
                 <fieldset>
-                    <!--Name-->
-                    <!--Mascot-->
+                    <!--Name--> 
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <!--Mascot--> 
+                    <label for="mascot">Mascot</label>
+                    <input type="text" name="name" required>
                     <!--Image-->
+                    <label for="image">Image (PNG or JPG)</label>
+                    <input type="file" name="image" accept=".png, .jpg" required>
                     <!--Image Caption-->
+                    <label for="imageCaption">Image Caption</label>
+                    <input type="text" name="imageCaption" required>
                 </fieldset>
                 <fieldset>
                     <!--Personal Background-->
+                    <label for="personal">Personal Background</label>
+                    <textarea name="personal" required></textarea>
                     <!--Professional Background-->
+                    <label for="professional">Professional Background</label>
+                    <textarea name="professional" required></textarea>
                     <!--Academic Background-->
+                    <label for="academic">Academic Background</label>
+                    <textarea name="academic" required></textarea>
                     <!--Web Dev Background-->
+                    <label for="webDev">Web Development Background</label>
+                    <textarea name="webDev" required></textarea>
                     <!--Primary Computer Platform-->
+                    <label for="compPlat">Primary Computer Platform</label>
+                    <input type="text" name="compPlat" required>
                 </fieldset>
                 <fieldset>
                     <!--Courses-->
+                    <label for="courses">Courses currently taking</label>
+                    <div id="courses">
+                        <input type="text" name="courses[]" placeholder="Enter a Course" required>
+                        <button type="button" onclick="addCourse()">Add Course</button>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <!--Funny thing-->
+                    <label for="funny">Funny Thing</label>
+                    <input type="text" name="funny">
                     <!--Anything else-->
+                    <label for="else">Anything Else</label>
+                    <input type="text" name="else">
                 </fieldset>
                 <fieldset>
                     <!--I agree-->
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+                    </label>
                     <!--Submit-->
+                    <label><input value="submit" type="submit"></label>
                     <!--Reset-->
+                    <label><input value="reset" type="reset"></label>
                 </fieldset>
             </form>
         </main>
