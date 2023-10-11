@@ -57,3 +57,25 @@ a:link{
     color: black;
 }
 
+@media (min-width: 576px) {
+    body{
+        margin: 20px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    header{
+        background-color: #8b8c89;
+        color: #274c77;
+        padding: 10px;
+    }
+
+    footer{
+        background-color: #8b8c89;
+        color: #274c77;
+        padding: 10px;
+    }
+}
