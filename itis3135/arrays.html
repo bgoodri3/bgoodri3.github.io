@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/arrays.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <main>
+        <h1>Employee Salary Management</h1>
+        <label for="employeeSelect">Select Employee:</label>
+        <select id="employeeSelect">
+            <option value="John">John</option>
+            <option value="Alice">Alice</option>
+            <option value="Bob">Bob</option>
+        </select>
+        <br>
+
+        <label for="salaryInput">Enter Salary:</label>
+        <input type="text" id="salaryInput">
+        <button onclick="addSalary()">Add Salary</button>
+        <br>
+
+        <button onclick="displayResults()">Display Results</button>
+        <br>
+
+        <div id="results">
+            <h2>Results</h2>
+        </div>
+
+        <table id="results_table">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </table>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+</body>
+</html>
