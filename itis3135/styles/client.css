@@ -1,0 +1,79 @@
+/* https://coolors.co/334139-1e2d24-c52184-e574bc-f9b4ed  */
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the background color for the whole page */
+  body {
+    background-color: #1e2d24;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #334139;
+    padding: 20px;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    background-color: #334139;
+    padding: 10px;
+    text-align: center; /* Center-align links within the navigation bar */
+  }
+  
+  /* Add spacing and styling to the links in the navigation bar */
+  nav a {
+    margin: 0 10px; /* Add margin to the left and right of links */
+    text-decoration: none;
+    color: #c52184; /* Text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #e574bc; /* Change color on hover */
+  }
+  
+  /* Main content area */
+  main {
+    padding: 20px;
+  }
+  
+  /* Product listings or sections */
+  .product {
+    background-color: #c52184;
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Add spacing and styling to the links and buttons within product listings */
+  .product a,
+  .product button {
+    display: block; /* Make them block-level elements */
+    margin: 10px 0; /* Add margin to the top and bottom of links and buttons */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e574bc;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product a:hover,
+  .product button:hover {
+    background-color: #f9b4ed; /* Change color on hover */
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #334139;
+    padding: 10px;
+    color: #ffffff; /* Text color */
+  }
