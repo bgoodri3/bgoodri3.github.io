@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hobby Website</title>
+    <style>
+        img {
+            width: 125px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Hobby</h1>
+        <nav>
+            <ul>
+                <li><a href="#midterm">Home</a></li>
+                <li><a href="#who">Who</a></li>
+                <li><a href="#what">What</a></li>
+                <li><a href="#when">When</a></li>
+                <li><a href="#where">Where</a></li>
+                <li><a href="#how">How</a></li>
+                <li><a href="#why">Why</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="midterm">
+            <h2>Midterm</h2>
+        </section>
+
+        <section id="who">
+            <h2>About Me</h2>
+            <h3>Introduction</h3>
+            <p>I am Brendon Goodrich. I am 22 years old and I am a nerd.</p>
+            <h3>My Experience</h3>
+            <p>My favorite Hobby is Dungeons and Dragons. I have played since 2017 and have ran and played in multiple campaigns.</p>
+            <figure>
+                <img src="images/brendon.jpg" alt="myself">
+                <figcaption>Myself.</figcaption>
+            </figure>
+        </section>
+
+        <section id="what">
+            <h2>Home</h2>
+            <h3>What is Dungeons and Dragons</h3>
+            <p>Dungeon and Dragons is a tabletop roleplaying game, shortened to TTRPG, where you play mostly with your imagination. Run by a person commonly referred to as a Dungeon master, or DM for short, they guide the rest of the players through a narrative where the only limit is their imagination and some dice rolls.</p
+            <figure>
+                <img src="images/costume.jpg" alt="dungeon master">
+                <figcaption>A dungeon master costume</figcaption>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>When can you play?</h2>
+            <p>Harder than anything your DM can throw at you, scheduling is the bane of all players. Most groups wait for when everyone is free, and some play where their character might sit out for a session or two. Any D&D player will tell you this is the hardest part.</p>
+            <figure>
+                <img src="images/schedule.png" alt="calendar">
+                <figcaption>People trying to figure out how to make scheduling work.</figcaption>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Where can you play?</h2>
+            <p>Anywhere! You can play online, at a table, or even in a car. Sometimes you don't even need dice adn you just describe what happens. The fun can happen anywhere</p>
+            <figure>
+                <img src="images/dragon_fight.jpg" alt="adventurers in a dungeon">
+                <figcaption>A group of adventures fighting a dragon in a dungeon.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="how">
+            <h2>How to start?</h2>
+            <p>This is a generalized list of how to start playing dungeons and dragons.</p>
+            <ol type="1">
+                <li>Find a group to play with.</li>
+                <li>Grab some dice.</li>
+                <li>Make a character by picking class, race, and background.</li>
+                <li>Make a backstory for your character and pick a voice, serious or funny.</li>
+                <li>Have sessions over a span of time.</li>
+                <li>Have fun!</li>
+            </ol>
+            <figure>
+                <img src="images/people.jpg" alt="campaign">
+                <figcaption>A group of friends playing dungeons and dragons.</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why do we play?</h2>
+            <p>We play for a multitude of reasons. We play to tell a story. We play to talk to friends. We play because we want to explore dungeons and kill dragons. There is a multitude of reasons for people to play Dungeons and Dragons and to each their own. I play because I have fun with it. I can be a literal skeleton who wants to break out of their life long contract. I can be a bug person who screams in terror in every fight they're in. I can even be a sentient spoon if I wanted. It's just fun and way to relax after what feels like a long week.</p>
+            <figure>
+                <img src="images/hat.jpg" alt="movie">
+                <figcaption>A promotional image for the movie "Dungeons and Dragons: Honor Among Thieves".</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Goodrich Ventures</p>
+        <p><a href="https://webpages.charlotte.edu/bgoodri3/itis3135/firm_enhance.html">Goodrich Ventures</a></p>
+    </footer>
+
+    <!-- Validation buttons or stylized text for HTML and CSS validation -->
+    
+    <script>
+        // JavaScript to hide and show sections when clicked
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            section.style.display = 'none';
+        });
+
+        // Show the home page by default
+        document.getElementById('what').style.display = 'block';
+
+        document.querySelector('nav').addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                const sectionId = event.target.getAttribute('href').substring(1);
+                sections.forEach((section) => {
+                    section.style.display = 'none';
+                });
+                document.getElementById(sectionId).style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
