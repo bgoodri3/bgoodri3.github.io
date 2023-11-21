@@ -79,3 +79,33 @@ a:link{
         padding: 10px;
     }
 }
+
+#slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    text-align: center;
+  }
+  
+  #image-list {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #image-list a {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }

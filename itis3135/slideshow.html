@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <main>
+        <div id="slideshow-container">
+            <div class="slide" id="slide-B">
+                <img src="images/banjo.jpg" alt="B">
+                <div class="caption">B - Banjo</div>
+            </div>
+
+            <div class="slide" id="slide-R">
+                <img src="images/rat.jpg" alt="R">
+                <div class="caption">R - Rat</div>
+            </div>
+
+            <div class="slide" id="slide-E">
+                <img src="images/electric.jpg" alt="E">
+                <div class="caption">E - Electric Scooter</div>
+            </div>
+
+            <div class="slide" id="slide-N">
+                <img src="images/nose.jpg" alt="N">
+                <div class="caption">N - Nose</div>
+            </div>
+
+            <div class="slide" id="slide-D">
+                <img src="images/dog.jpg" alt="D">
+                <div class="caption">D - Dog</div>
+            </div>
+
+            <div class="slide" id="slide-O">
+                <img src="images/obtuse.jpg" alt="O">
+                <div class="caption">O - Obtuse angle</div>
+            </div>
+
+            <div class="slide" id="slide-N2">
+                <img src="images/niger.jpg" alt="N2">
+                <div class="caption">N - Niger</div>
+            </div>
+        </div>
+
+        <div id="image-list">
+            <a href="#" onclick="showSlide('B')">B</a>
+            <a href="#" onclick="showSlide('R')">R</a>
+            <a href="#" onclick="showSlide('E')">E</a>
+            <a href="#" onclick="showSlide('N')">N</a>
+            <a href="#" onclick="showSlide('D')">D</a>
+            <a href="#" onclick="showSlide('O')">O</a>
+            <a href="#" onclick="showSlide('N2')">N</a>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+</body>
+</html>
