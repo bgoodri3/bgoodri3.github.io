@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="styles/client.css">
-  <title>Account</title>>
+  <title>Account</title>
+  <script src="scripts/client_account.js"></script>
 </head>
 <body>
   <header>
@@ -35,13 +36,14 @@
     <div class="account-settings">
       <h2>Account Settings</h2>
       <ul>
-        <li><strong>Change Password:</strong></li><input type="text">
-        <li><strong>Change Email:</strong></li><input type="text">
-        <li><button type="button">Delete Account</button></li>
+        <li><strong>Change Password:</strong> <input type="password" id="newPassword"></li>
+        <li><strong>Change Email:</strong> <input type="email" id="newEmail"></li>
+        <li><button type="button" onclick="deleteAccount()">Delete Account</button></li>
       </ul>
     </div>
   </main>
   <div data-include="components/footer.html"></div>
   <script src="scripts/include.min.js"></script>
+  <script src="scripts/account.js"></script>
 </body>
 </html>

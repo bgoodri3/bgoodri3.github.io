@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/client.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="scripts/client_product.js"></script>
   <title>Our Products</title>
 </head>
 <body>
@@ -25,17 +33,73 @@
   <main>
     <h1>Our Products</h1>
     
-    <div class="product">
-      <img src="images/cupcake.png" alt="Product 1">
-      <h2>Beauty and the Beast Cupcake</h2>
+    <!-- jQuery Plugin 1: Image Slider -->
+    <div class="product-slider">
+      <div class="product">
+        <img src="images/cupcake.png" alt="Product 1" width="150" height="150">
+        <h2>Beauty and the Beast Cupcake</h2>
+        <div class="product-details">
+          <p>A tale as old as time deserves a treat just as classic.</p>
+        </div>
+      </div>
+  
+      <div class="product">
+        <img src="images/cake.png" alt="Product 2" width="150" height="150">
+        <h2>Castle Cake</h2>
+        <div class="product-details">
+          <p>Storm the castle, slay the dragon, save the princess, and eat good cake while you're doing it too!</p>
+        </div>
+      </div>
     </div>
+  
+    <div class="modal" id="productModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Product Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Add content for modal pop-up -->
+            <p>Product details go here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+  
+   <!-- jQuery-UI Widget: Date Picker -->
+  <div id="datePickerContainer">
+    <label for="datepicker">Select a Date:</label>
+    <input type="text" id="datepicker" placeholder="mm/dd">
+    <button id="confirmDate">Confirm Date</button>
+  </div>
 
-    <div class="product">
-      <img src="images/cake.png" alt="Product 2">
-      <h2>Castle Cake</h2>
+<!-- Add a modal for displaying the confirmation message -->
+<div class="modal" id="confirmationModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="confirmationMessage"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
+</div>
+
   </main>
   <div data-include="components/footer.html"></div>
-  <script src="scripts/include.min.js"></script>
 </body>
 </html>

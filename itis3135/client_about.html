@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="styles/client.css">
   <title>about</title>
+  <script src="scripts/client_about.js"></script>
 </head>
 <body>
   <header>
@@ -24,14 +25,16 @@
   </nav>
   <main>
     <h2>About Us</h2>
-    <p>
+    <p id="welcome-text">
       Welcome to 2bSquared Design!
       We are a nonprofit design business.
       We offer designs for cakes, cupcakes, t-shirts (when available), and more.
       Thanks for checking us out!
     </p>
+    <button onclick="changeWelcomeText()">Click me</button>
   </main>
   <div data-include="components/footer.html"></div>
   <script src="scripts/include.min.js"></script>
+  <script src="scripts/about.js"></script>
 </body>
 </html>
